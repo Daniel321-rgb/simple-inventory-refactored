@@ -1,4 +1,4 @@
-class InvalidQuantityException extends InventoryException {
+class InvalidQuantityException extends Exception {
     public InvalidQuantityException(String message) { super(message); }
 }
 
