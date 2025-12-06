@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-class Inventory implements InventoryOperation {
+class Inventory implements InventoryService {
     // Refactoring: Feature Envy (Pakai HashMap)
     private Map<String, Product> productMap = new HashMap<>(); 
     
@@ -10,7 +10,8 @@ class Inventory implements InventoryOperation {
     public void addProduct(Product product){
         productMap.put(product.getProductID(), product);
         // Output persis original
-        System.out.println("Product added " + product.getProductName() + " with quantity " + product.getQuantity());
+        System.out.println("Product added " + product.getProductName() + 
+        " with quantity " + product.getQuantity());
     }
 
     @Override
