@@ -6,8 +6,8 @@ This repository contains the **refactored version** of a legacy Simple Inventory
 
 The original code served as a case study for this refactoring project. The codebase suffered from poor design choices and several "Code Smells." The primary issues identified were **Refused Bequest**, **Feature Envy**, and **Primitive Obsession**.
 
-* **Original Repository:** [https://github.com/FivePesos/SimpleInventoryManagement-System-/tree/main]
-* **Target File (Smelly Code):** `Inventory.java` (Permalink)
+* **Original Repository:** [SimpleInventoryManagement_System_By_FivePesos](https://github.com/FivePesos/SimpleInventoryManagement-System-/tree/main)
+* **Target File (Smelly Code):** [`Main.java` (Permalink)]
 
 ## 🛠️ Refactoring Changes
 
@@ -40,3 +40,4 @@ The refactored project structure is organized as follows:
 * `InventoryService.java`: Handles business logic (add, remove, check stock).
 * `Main.java`: Application entry point.
 * `InsufficientStockException.java`: Custom error handling for stock issues.
+
